@@ -34,4 +34,34 @@ function twoSumTarget(arr, target) {
   return false;
 }
 
-console.log(twoSumTarget([1, 2, 4, 6, 8, 9, 14, 15], 13));
+// checks if str1 is a susequence of str2
+function isSubsequence(str1, str2) {
+  let i = 0;
+  let j = 0;
+
+  while (i < str1.length && j < str2.length) {
+    if (str1[i] == str2[j]) {
+      i++;
+    }
+    j++;
+  }
+
+  return i == str1.length;
+}
+
+//reverse a string without .reverse() method
+function reverseString(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left < right) {
+    let tmp = arr[left];
+
+    arr[left++] = arr[right];
+    arr[right--] = tmp;
+  }
+
+  return arr;
+}
+
+console.log(reverseString(["h", "e", "l", "l", "0"]));
