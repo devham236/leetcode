@@ -64,4 +64,25 @@ function reverseString(arr) {
   return arr;
 }
 
-console.log(reverseString(["h", "e", "l", "l", "0"]));
+//Given an integer array "nums" sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+function sortedSquares(nums) {
+  let newArr = new Array(nums.length);
+  let left = 0;
+  let right = nums.length - 1;
+
+  for (let i = right; i >= 0; i--) {
+    let square;
+    if (Math.abs(nums[left]) < Math.abs(nums[right])) {
+      square = nums[right];
+      right--;
+    } else {
+      square = nums[left];
+      left++;
+    }
+    newArr[i] = square * square;
+  }
+
+  return newArr;
+}
+
+console.log(sortedSquares([-4, -1, 0, 3, 10]));
