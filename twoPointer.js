@@ -65,6 +65,8 @@ function reverseString(arr) {
 }
 
 //Given an integer array "nums" sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+// input array is sorted, that means the largest squared number will be either at the end or at the beginning
+//
 function sortedSquares(nums) {
   let newArr = new Array(nums.length);
   let left = 0;
