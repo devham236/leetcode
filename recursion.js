@@ -17,6 +17,8 @@ fn(1);
 // End of call where i = 2
 // End of call where i = 1
 
+/////////////////////////////////////////////////
+
 /* Example 2 */
 function countDown(n) {
   if (n <= 0) return;
@@ -34,6 +36,8 @@ countDown(3);
 // Returning from n = 1
 // Returning from n = 2
 // Returning from n = 3
+
+/////////////////////////////////////////////////
 
 /* Example 3 */
 function doubleCall(n) {
@@ -62,6 +66,8 @@ doubleCall(0);
 // End call n = 2
 // End call n = 1
 // End call n = 0
+
+/////////////////////////////////////////////////
 
 /* Example 4 */
 function sum(n) {
